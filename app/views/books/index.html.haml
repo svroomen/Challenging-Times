@@ -13,3 +13,5 @@
         %td= book.author
         %td= book.publisher
         %td= book.genre
+
+= will_paginate @books, renderer: BootstrapPagination::Rails
