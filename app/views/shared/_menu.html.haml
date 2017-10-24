@@ -1,0 +1,19 @@
+%nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'Kyle Is Sick Challenge', '', :class => 'navbar-brand'
+    #navbar.navbar-collapse.collapse
+      %ul.nav.navbar-nav
+        %li
+          = link_to 'Root', root_path
+        %li
+          = link_to 'Home', home_path
+        %li
+          = link_to 'About', about_path
+        %li
+          = link_to 'Books', books_path

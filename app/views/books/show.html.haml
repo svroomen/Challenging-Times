@@ -1,0 +1,10 @@
+.panel.panel-default
+  .panel-heading
+    %h3.panel-title
+      = @book.title
+      .pull-right
+        = link_to 'View all Books', :back, :class => 'header-link'
+  .panel-body
+    %p= "Author: #{@book.author}"
+    %p= "Publisher: #{@book.publisher}"
+    %p= "Genre:#{@book.genre}"

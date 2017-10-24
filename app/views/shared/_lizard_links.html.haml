@@ -1,0 +1,11 @@
+.dropdown.pull-left.padding-right
+  %button#dropdownMenu1.btn.btn-default.dropdown-toggle{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+    %i.fa.fa-bars
+  %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+    %li
+      = link_to 'display 12 lizards', lizards_path(12), :class => 'dropdown-item'
+    %li
+      = link_to 'display 444 lizards', lizards_path(444), :class => 'dropdown-item'
+    %li
+      = link_to 'display 9672 lizards', lizards_path(9672), :class => 'dropdown-item'
+
