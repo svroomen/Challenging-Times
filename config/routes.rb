@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get '/about_us', :to => 'pages#about', :as => 'about'
   get '/lizards/:number', :to => 'pages#lizards', :as => 'lizards'
   get '/books', :to => 'books#index', :as => 'books'
-  get '/book/:id', :to => 'books#show', :as => 'book'
+  get '/books/:id', :to => 'books#show', :as => 'book'
 end
